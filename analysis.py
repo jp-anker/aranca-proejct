@@ -26,6 +26,13 @@ FMP_API_KEY = os.getenv("FMP_API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 
+# Load environment variables
+FMP_API_KEY = st.secrets["api"]["FMP_API_KEY"]
+OPENAI_API_KEY = st.secrets["api"]["OPENAI_API_KEY"]
+DEEPSEEK_API_KEY = st.secrets["api"]["DEEPSEEK_API_KEY"]
+
+
+
 #openai.api_key = OPENAI_API_KEY
 
 
