@@ -553,7 +553,7 @@ def perpx_organic(ticker,threshold):
     ###  Step 4: Final Output Structure  
     Return output strictly in below format:  
     
-    ```Output:
+    ```json
     {{
     "Ticker": "<STRING>",
     "Growth %": "<STRING>",
@@ -582,7 +582,7 @@ def perpx_organic(ticker,threshold):
     
     result = response.choices[0].message.content.strip()
     print(result)
-    result = json.loads(result.lower().split("output:")[1].split("```")[0].strip())
+    result = json.loads(result.lower().split("json")[1].split("```")[0].strip())
     #print(result)
     return result   
 
