@@ -15,16 +15,18 @@ import re
 from typing import List, Dict
 
 # Setup
-PERPLEXITY_API_KEY = os.getenv("PERPLEXITY_API_KEY")
+
+#PERPLEXITY_API_KEY = os.getenv("PERPLEXITY_API_KEY")
+PERPLEXITY_API_KEY = st.secrets["api"]["PERPLEXITY_API_KEY"]
 
 client = OpenAI(api_key=PERPLEXITY_API_KEY, base_url="https://api.perplexity.ai")
 
 
 
 #load_dotenv()
-FMP_API_KEY = os.getenv("FMP_API_KEY")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
+#FMP_API_KEY = os.getenv("FMP_API_KEY")
+#OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+#DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 
 # Load environment variables
 FMP_API_KEY = st.secrets["api"]["FMP_API_KEY"]
