@@ -10,12 +10,12 @@ from datetime import datetime
 
 def load_sp500_companies():
     """Mock S&P 500 data - replace with actual data source"""
-    df  = pd.read_excel("data/sp500_companies_growth.xlsx", engine='openpyxl')
+    df  = pd.read_excel("Data/sp500_companies_growth.xlsx", engine='openpyxl')
     return df
  # Cache data for 1 hour
 def load_sp500_companies():
     """Load S&P 500 data from Excel file"""
-    df = pd.read_excel("data/sp500_companies_growth.xlsx", engine='openpyxl')
+    df = pd.read_excel("Data/sp500_companies_growth.xlsx", engine='openpyxl')
     return df
 
 def safe_int(val):
