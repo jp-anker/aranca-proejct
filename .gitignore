@@ -1,4 +1,4 @@
-_pycache/
+__pycache__/
 .env
 Data/temp.xlsx
 my_env/
